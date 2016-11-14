@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+ 
+<validators>
+
+	
+		
+	<field name="hotelName" >
+      <field-validator type="requiredstring" >
+          <message key="hotel name should not be null"/>
+      </field-validator>
+	</field>
+	
+	<field name="city">
+      <field-validator type="requiredstring" >
+          <message key="city should not be null"/>
+      </field-validator>
+	</field>	
+		<field name="address">
+      <field-validator type="requiredstring" >
+          <message key="address should not be null"/>
+      </field-validator>
+      <field name="avg_rate_night">
+      <field-validator type="long" short-circuit="false">
+          <message key="avg_rate_night should not be null"/>
+      </field-validator>
+	</field>
+	<field name="phoneNo1">
+   <field-validator type="requiredstring">
+        <param name="min">1000000000</param>
+        <param name="max">9999999999</param>
+        <message key="mobile number should be 10 digits"></message>
+   </field-validator>
+  </field>
+  
+  <field name="fax">
+   <field-validator type="requiredstring">
+       
+       <message>phone number should be 10 digits</message>
+   </field-validator>
+  </field>
+  
+  <field name="email">
+   <field-validator type="requiredstring">
+       
+        <message key="please fill address field"></message>
+   </field-validator>
+  </field>
+	
+	<field name="email">
+      <field-validator type="requiredstring" short-circuit="false">
+          <message key="email should not be null"/>
+      </field-validator>
+     
+</field>
+	
+</validators>

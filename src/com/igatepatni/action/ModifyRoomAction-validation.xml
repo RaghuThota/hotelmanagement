@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+ 
+<validators>
+
+	
+		
+	<field name="roomNo">
+      <field-validator type="requiredstring" >
+          <message key="room number should not be null"/>
+      </field-validator>
+	</field>
+	
+	<field name="perNightRate">
+      <field-validator type="required">
+          <message key=" amount should not be null"/>
+      </field-validator>
+	</field>	
+	</validators>
+		
+	

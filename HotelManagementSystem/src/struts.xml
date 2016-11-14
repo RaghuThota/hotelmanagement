@@ -1,0 +1,72 @@
+
+<!DOCTYPE struts PUBLIC
+
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+  <package name="default" namespace="/" extends="struts-default">
+		<action name="login" class="com.igatepatni.action.LoginAction" >
+		   <result name="admin">/JSP/AdminPage.jsp</result>
+		   <result name="custemp">/CustomerEmployee.jsp</result>
+		   <result name="error">/LoginError.jsp</result>
+		   <result name="input">/LoginPage.jsp</result>
+		</action>
+		
+		
+		<action name="addHotel" class="com.igatepatni.action.HotelAddAction">
+		<result name="success">AddHotelSuccess.jsp</result>
+		<result name="error">Error.jsp</result>
+		<result name="input">HotelAdd.jsp</result>
+		</action>
+		
+		
+		
+		<action name="retrieveForModify" class="com.igatepatni.action.RetrieveForModifyAction">
+		<result name="success">ModifyHotelForm.jsp</result>
+		<result name="error">RetrieveError.jsp</result>
+		<result name="input">ModifyHotelById.jsp</result>
+		</action>
+		
+		<action name="modifyHotel" class="com.igatepatni.action.ModifyHotelAction">
+		<result name="success">ModifyHotelSuccess.jsp</result>
+		<result name="input">ModifyHotelForm.jsp</result>
+		</action>
+		
+		<action name="deleteHotel" class="com.igatepatni.action.DeleteHotelAction">
+		<result name="success">DeleteHotelSuccess.jsp</result>
+		<result name="error">Error.jsp</result>
+		<result name="input">DeleteHotelById.jsp</result>
+		</action>
+		
+		<action name="RetrieveHotel" class="com.igatepatni.action.RetrieveHotelAction">
+		<result name="success">RetrieveHotelReport.jsp</result>
+		<result name="error">HotelRetrievError.jsp</result>
+		</action>
+		
+		<action name="addRooms" class="com.igatepatni.action.AddRoomsAction"> 
+        <result name="success">AddRoomsSuccess.jsp</result> 
+        <result name="input">AddRooms.jsp</result> 
+        </action>
+        
+        <action name="deleteRooms" class="com.igatepatni.action.DeleteRoomAction">
+		<result name="success">DeleteRoomSuccess.jsp</result>
+		<result name="error">DeleteError.jsp</result>
+		<result name="input">DeleteRooms.jsp</result>
+		</action>
+		
+		<action name="retrieveForModifyRoom" class="com.igatepatni.action.RetrieveForModifyRoomAction">
+		<result name="success">ModifyRoomForm.jsp</result>
+		<result name="error">RetrieveError.jsp</result>
+		<result name="input">ModifyRoomsById.jsp</result>
+		</action>
+		
+		
+		<action name="modifyRoom" class="com.igatepatni.action.ModifyRoomAction">
+		<result name="success">ModifyRoomSuccess.jsp</result>
+		<result name="input">ModifyRoomForm.jsp</result>
+		</action>
+  </package>
+</struts>
